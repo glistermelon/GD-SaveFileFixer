@@ -16,9 +16,6 @@ __author__ = "HGStyle & WEGFan"
 def clear_screen():
 	os.system('clear' if os.name != "nt" else "cls")
 
-def separate_section():
-	print('-' * 50)
-
 def fix_file(file, decode_type):
 	# WARNING: This function does not create any backup !
 	# Read the data
@@ -66,22 +63,67 @@ def fix_file(file, decode_type):
 	with open(file, 'wb') as f:
 		f.write(data)
 
+def ask_for_choice(question, responses):
+	# Function to ask a question and get a valid response from a set of responses
+	print(question)
+	resps = {}
+	x = 1
+	for response in responses:
+		print(f"{x}. {response}")
+		resps[str(x)] = response
+		x += 1
+	attempts = 0
+	while True:
+		if attempts != 0:
+			print('Invalid response, please choose the number of the option.')
+			print(question)
+			for key in resps.keys():
+				print(f"{key}. {resps[key]}")
+		choice = input('Write your choice -> ')
+		if choice.lower().strip() in resps.keys():
+			return resps[choice.lower().strip()]
+		else:
+			attempts += 1
+			clear_screen()
+
+def ask_for_path(question):
+	# Function to ask a question and get a valid filepath
+	print(question)
+	attempts = 0
+	while True:
+		if attempts != 0:
+			print('Invalid filepath, please choose the number of the option.')
+			print(question)
+		choice = input('Write the filepath -> ')
+		if os.path.exists(choice):
+			return choice
+		else:
+			attempts += 1
+			clear_screen()
+
+def backup_file(file, dir):
+	# Simple function to create a backup
+	shutil.copyfile(file, os.path.join(dir, file))
+	return True
+
+def create_backup_dir(path):
+	# Simple function to create backup directory
+	dirname = "backup_" + datetime.datetime.now().strftime('Y%Y-M%m-D%d_h%H-m%M-s%S')
+	os.mkdir(os.path.join(path, dirname))
+	return os.path.join(path, dirname)
+
 if __name__ == "__main__":
 	# Prints informations to the user
-	separate_section()
 	print("""Hello user ! (read this if its your first use)
 It seems like you wanna fix your Geometry Dash Savefiles !
-Note that for now, this programm isn't supported on MacOS,
-but it'll be implemented in some days/weeks, be patient !
 This programm was entirelly rewritten by HGStyle from
-the WEGFans's tool Geometry-Dash-Savefile-Fix GitHub Repo.
+the WEGFans's tool Geometry-Dash-Savefile-Fix GitHub repo.
 Thanks to him, I could never knew how to fix GD Savefiles
-without his open-source repo !
+without his GitHub repository !
 For more informations (like how to install PyCryptoDome),
 go to: https://github.com/HGStyle/GD-SaveFileFixer/
 Before running that programm, check for any warnings
 before that text. (nothing before that text = you can run,
 else please read the README file of my GitHub repo !)
 """)
-	separate_section()
 	input('Pres ENTER to start this programm !')
