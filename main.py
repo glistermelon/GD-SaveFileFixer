@@ -111,13 +111,13 @@ def ask_for_path(question):
 
 def backup_file(file, dir):
 	# Simple function to create a backup
-	shutil.copyfile(file, os.path.join(dir, file))
+	shutil.copyfile(file, os.path.join(dir, os.path.basename(file)))
 	return True
 
 def create_backup_dir(path):
 	# Simple function to create backup directory
 	dirname = "backup_" + datetime.datetime.now().strftime('Y%Y-M%m-D%d-h%H')
-	if dirname not in os.listdir():
+	if not os.path.exists(os.path.join(path, dirname)):
 		os.mkdir(os.path.join(path, dirname))
 	return os.path.join(path, dirname)
 
@@ -211,6 +211,8 @@ Rollback this backup manually if you need it.
 			savefile = input('Input savefile path to add (empty to start fixing) -> ')
 			if not savefile:
 				break
+			elif not os.path.exists(savefile):
+				input('Savefile does not exists, check the filepath. Press enter to continue.')
 			elif not os.access(savefile, os.R_OK):
 				# Cannot access to path, gave tips to user based on the OS
 				if systemname == "android":
@@ -220,8 +222,6 @@ Rollback this backup manually if you need it.
 				else:
 					print('Access denied, try to relaunch this programm as root/administrator.')
 					input('Press Ctrl+C to exit, press enter to continue.')
-			elif not os.path.exists(savefile):
-				input('Savefile does not exists, check the filepath. Press enter to continue.')
 			else:
 				savefiles.append(savefile)
 			clear_screen()
@@ -374,7 +374,7 @@ Rollback this backup manually if you need it.
 	success = 0
 	for savefile in savefiles:
 		try:
-			result = fix_savefile(savefile)
+			result = fix_savefile(savefile, systemname)
 			print("Savefile fixed: " + savefile)
 			success += 1
 		except:
