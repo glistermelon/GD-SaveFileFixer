@@ -381,4 +381,4 @@ Rollback this backup manually if you need it.
 	print("Savefiles has been fixed !")
 	print(f"Success: {success}")
 	print(f"Errors: {errors}")
-	exit()
+	exit(0)
