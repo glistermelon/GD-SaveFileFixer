@@ -1,4 +1,4 @@
-# Geometry Dash Savefile Fix
+# Geometry Dash Savefile Fixer
 
 This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders)
 This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data.
