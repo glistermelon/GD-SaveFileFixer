@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # Import needed Python default libraries
-import base64, datetime, os, shutil, struct, sys, traceback, gzip, platform, time, fnmatch
+import base64, datetime, os, shutil, sys, traceback, gzip, platform, time, fnmatch
 # Try to import the optionnal PyCryptoDome library (you need to install it)
 try:
 	from Crypto.Cipher import AES
@@ -41,6 +41,7 @@ def fix_savefile(file, decode_type):
 			data = bytes(c ^ 11 for c in data)
 		except:
 			# Some error occured
+			traceback.print_exc()
 			return False
 	# todo: ask if ios gd uses macos encryption because im unsure
 	elif decode_type.lower().strip() in ["macos", 'ios']:
@@ -64,6 +65,7 @@ def fix_savefile(file, decode_type):
 			data = cipher.encrypt(data)
 		except:
 			# Some error occured
+			traceback.print_exc()
 			return False
 	# Save the file
 	with open(file, 'wb') as f:
