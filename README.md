@@ -19,3 +19,5 @@ However, it was very usefull to me for writing that programm ! So here's a backu
 [Click here to see page backup from a GD Wiki user](https://geometry-dash.fandom.com/wiki/User:XBZZZZALT#backup_of_useful_stuff_from_Save_Files_page)
 
 [Click here to see page backup on the Wayback Machine](https://web.archive.org/web/20230214133213/https://geometry-dash.fandom.com/wiki/Save_Files)
+
+[Click here to see GD Programming Docs about Savefiles](https://github.com/gd-programming/gd.docs/blob/main/docs/topics/localfiles_encrypt_decrypt.md)
