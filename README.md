@@ -24,9 +24,17 @@ To run the programm, on Windows and MacOS, double-click on it. Linux users could
 
 ### Running on Android
 
-Firstly, you will have to make the Geometry Dash app data accessible to you. By default, to avoid others apps to steal your data, Android has a protection that only allows the installed app to access to his data. Even you, the user, cannot access to it. To bypass this, the most known way is rooting your Android device. This task is dangerous. Really dangerous: do it incorrectly and you may never see your phone starts again. Also, rooting your Android device may cancel the warenty of the device, depending on what you have signed for while getting the warrenty. To avoid users to do this dangerous task and risk to lose all of their data, I found annother way, which is still a bit hard to realise but is way much more safer. I'm sorry, but if you have a GDPS (or any Geometry Dash app that has been signed using a test development key like [old App Cloner versions](https://appcloner.blog/2023/01/14/google-play-protect-signing-keys/) or any version of APK Editor with default settings for signing apps) you can do this using only your Android device, but this way is really long to do, and if you have the real Geometry Dash or annother app that hasn't been signed using the test development key (including the Geometry Dash app from the Play Store, every Android mod menus and modified GDPS such as GDPS Editor 2.2) you will need two devices: your Android device and a Windows, MacOS or Linux (they cannot be the same). Before doing this way, install and open the app [Root Checker](https://play.google.com/store/apps/details?id=com.joeykrim.rootcheck) to check if your phone is rooted or not. If it is rooted for any reason, you won't have to do anything. Here are the steps if you phone isn't rooted:
+Firstly, you will have to make the Geometry Dash app data accessible to you. By default, to avoid others apps to steal your data, Android has a protection that only allows the installed app to access to his data. Even you, the user, cannot access to it. To bypass this, the most known way is rooting your Android device. This task is dangerous. Really dangerous: do it incorrectly and you may never see your phone starts again. Also, rooting your Android device may cancel the warenty of the device, depending on what you have signed for while getting the warrenty. To avoid users to do this dangerous task and risk to lose all of their data, I found annother way, which is still a bit hard to realise but is way much more safer. I'm sorry, but if you have a GDPS (or any Geometry Dash app that has been signed using a test development key like [old App Cloner versions](https://appcloner.blog/2023/01/14/google-play-protect-signing-keys/) or any version of APK Editor with default settings for signing apps) you can do this using only your Android device, but this way is really long to do, and if you have the real Geometry Dash or annother app that hasn't been signed using the test development key (including the Geometry Dash app from the Play Store, every Android mod menus and modified GDPS such as GDPS Editor 2.2) you will need two devices: your Android device and a Windows, MacOS or Linux (they cannot be the same). Here are the steps:
 
-If your Geometry Dash version is a GDPS (or has been modified and signed using any version of APK Editor with default signing settings, or [modified using an old version of App Cloner](https://appcloner.blog/2023/01/14/google-play-protect-signing-keys/)) and you aren't on a rooted device:
+To know is your Geometry Dash app signed with testkey (so you can use the "is a GDPS" version of the fixer, which requires only your device and is less long):
+  - Download and install the app [APK Signature Viewer](https://apkpure.com/fr/apk-signature-viewer/com.badzzz.apksigninfoextractor)
+  - Open the app
+  - Search for your Geometry Dash
+  - Click on it
+  - See if its written somewhere "CN=Android Debug" in the message box that popped up.
+  - If there is "CN=Android Debug" written, your Geometry Dash is signed with testkey. Else, its not.
+
+If your Geometry Dash version is a GDPS (or your Geometry Dash is signed using testkey, or has been modified and signed using any version of APK Editor with default signing settings, or [modified using an old version of App Cloner](https://appcloner.blog/2023/01/14/google-play-protect-signing-keys/)) and you aren't on a rooted device:
   - Install the app [APK Extractor](https://play.google.com/store/apps/details?id=com.ext.ui) from the Play Store.
   - Open the app. Search for your Geometry Dash (or your GDPS, in case it's a GDPS)
   - Memorise the package name (which is usually formated like `aaa.bbbbbbb.cccccccccccc`). Since there is many steps, I recommend you to write it on a sticky note.
@@ -79,6 +87,7 @@ If your Geometry Dash version is a GDPS (or has been modified and signed using a
   - If it worked, open your Geometry Dash, and close it. (If it still crashes like before, its not a problem)
   - Exit all the apps and go to your browser to download the latest version of the Python programm. There is a binary for Android but I dont recommend it and it may be deleted in the future since Python installation in Termux (the app we'l use to launch the programm) is easy. Download it using [GitHub Releases](https://github.com/HGStyle/GD-SaveFileFixer/releases), download the first file ending with `.py` to your Downloads folder on your internal storage (not SD card ! if its on your SD card you will have to move it to your internal storage download folder).
   - Download and install the latest version of [Termux](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk), then open the app and wait for the loading to finish. Dont use the Google Play Store version since it is no longer updated and broken. You will get a terminal like on Linux, but dont panic, I'll guide you !
+  - Open the app when it's installed
   - You will have to allow the storage access since [its not enabled by default](https://wiki.termux.com/wiki/Termux-setup-storage). To do that, simply type `termux-setup-storage` and press enter. Now allow storage access and you are ready ! You can enter the next command when you see the dollar symbol back and waiting you for the next command.
   - If you are on Android 11 or later (or you dont know which version of Android you have), go to Settings (exit Termux, you can completely close it or not), Applications, Termux, Permissions, disable storage access and re-enable it. [This is due to an Android bug which cannot be fixed by the Termux community.](https://wiki.termux.com/wiki/Termux-setup-storage) Then go back to Termux.
   - Now we'll update the Termux programms. Simply type `apt update`, then press enter. After, type `apt upgrade -y` and press enter. After, remove unnecesary software (its automatic and won't break anything) by typing `apt autoremove -y` and press enter. (from now I will no longer say "Press enter", but you will still have to do it after typing a command)
@@ -145,14 +154,97 @@ If you dont have a rooted phone and the method before this one does not works fo
       - Run the command: `python3 [name of the python file you downloaded]`, usually the Python script file name is `GD-SaveFileFixer-SourceCode.py`.
       - Enter the option 1 of the programm
       - Follow the instructions given by the programm: add the paths that were given by the command in the terminal. You can use copy-paste, but add the paths 1 by 1 only ! When you are ready to fix it, enter nothing and it'll start.
-  - Open again the `backup.tar` file with an archiving software (for 7-zip users: right-click on the file, 7-zip and finaly open archive)
-  - Go to the app directory, the directory called with the package name of the game and finally the "r" folder
-  - Select the files ending with `.dat` and delete them by pressing the del key on your keyboard and validate deletion
-  - Select in the folder containing all the stuff the files ending with `.dat` and drag-n-drop them in the archive, wait for adding files operation ends
-  - Close the archiving software. If it asks you whenether to save or not, click save
-  - In the terminal, run the command `java -jar abe.jar pack backup.tar backup_modified.ab [an easy-to-remember password only containing letters and numbers, no spaces or other special characters !]` (if your Android device is really old and has Android 4.4 installed, replace `pack` by `pack-kk` in the command)
-  - Wait for the programm to finish
-  - Run the command: `./adb ` todo finish that
+  - When the programm is done, open a file manager and go to your Android device, go to your internal memory of your device and copy the fixed files (not the files in the backup folder !) to your Android device. Make sure to move them at the root of the memory, not in a folder and not on your SD card. For all the next steps you won't need a computer.
+  - Install the app [APK Extractor](https://play.google.com/store/apps/details?id=com.ext.ui) from the Play Store.
+  - Open the app. Search for your Geometry Dash (or your GDPS, in case it's a GDPS)
+  - Memorise the package name (which is usually formated like `aaa.bbbbbbb.cccccccccccc`). Since there is many steps, I recommend you to write it on a sticky note.
+  - Click on the app to extract his APK. We'll need it later.
+  - Do not uninstall APK Extractor since we'll need it later.
+  - If the package name you memorised is `com.robtopx.geometryjumq` (notice the `q` at the end !):
+      - Download and install [APK Editor Pro](https://dl.hgstyle.fr/Apps/AndroidHackerKit/APK_Editor/Clean/APK_Editor_Pro.apk)
+      - Download the APK of Geometry Dash (but not the one used by GDPSes, and it should be version 2.111). I recommend using this one: [Download Geometry Dash 2.111 APK](https://dl.hgstyle.fr/Geometry_Dash_Versions/Geometry.Dash.ver.2.111.build.33.apk)
+      - Open APK Editor Pro, alow storage access, click "Select Apk from App" and click on your Geometry Dash or your GDPS
+      - Select "Full Edit" and then "Decode All Files", then go to "Files" in the toolbar of APK Editor Pro
+      - Select the folder `assets` and `lib` and click "Extract", then go to your downloads folder and click "OK" (then wait for it ends and exit the app)
+      - Make sure to exit the app completely and reopen it, now click "Select an Apk File" and click on the APK file of Geometry Dash 2.111 you downloaded (make sure the APK is stored in your internal storage, not in your SD card !)
+      - Click "Full Edit" and then "Decode All Files" again and go to files
+      - Select the folders `assets` and `lib` and click delete
+      - Click the button with a plus symbol in a folder, and go to "Import Folder"
+      - Click on the "..." button and browse into the `assets` folder in your downloads folder and click "OK"
+      - A field will be filled automatically, be sure to see that the last word separated by the "/" is `assets` else click cancel and repeat the two last steps
+      - Click "OK" and wait for it imports the folder `assets` into the APK
+      - Again, click the button with a plus symbol in a folder, and go to "Import Folder"
+      - Click on the "..." button and browse into the `lib` folder in your downloads folder and click "OK"
+      - A field will be filled automatically, be sure to see that the last word separated by the "/" is `lib` else click cancel and repeat the two last steps
+      - Click "OK" and wait for it imports the folder `assets` into the APK
+      - Click on the "Build" button and wait for it builds the APK file
+      - Open your file manager, go to internal storage, go to the folder "ApkEditor" (if you see multiple files, ignore those that aren't an APK) and move the APK file to the downloas folder in your internal storage
+      - Optionally, you can delete the "ApkEditor" folder and/or the APK Editor Pro app
+  - Download an install [App Cloner Pro](https://dl.hgstyle.fr/Apps/AndroidHackerKit/Other_apps/App_Cloner_Pro.apk)
+  - Open App Cloner
+  - If the package name you memorised is `com.robtopx.geometryjumq` (notice the `q` at the end !):
+      - Click on the folder icon and click OK when a message box appears
+      - Click the browse files logo
+      - Open your downloads folder and click on the APK you just moved here
+  - Else:
+      - Search the Geometry Dash app (or your GDPS) and click on it
+  - Scroll down and go to "Storage options"
+  - Click on "Redirect external storage" and check the "Enable" box
+  - Scroll down and enable "Acessible data directory"
+  - Go back to main options categories
+  - Scroll up and click on "Clone number" option
+  - Check the box "Replace original app" and click "OK"
+  - Click the button with the App Cloner logo on it, click "OK" and wait for it ends
+  - When you can, click on the "Uninstall app" button (this will uninstall the Geometry Dash, but we got a backup of the data that we fixed so you won't lose anything)
+  - Go to the "Cloned APKs" category and hold on the first of the two apps that seems the same, then stop holding
+  - In the upper toolbar click the diskette logo and save the file to your downloads folder
+  - Wait for the app to say "Successfully saved file" at the bottom of the app UI
+  - Close the app and open your file manager
+  - Go to your downloads folder by going to storage and then in the "Download" folder
+  - Search for the APK made by App Cloner anc open it/click on it
+  - It will normally show something like "Do you wanna install this app ?", so click "Install"
+  - When its done, click "Open" to open the game, then close it
+  - Download and install the latest version of [Termux](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk), then open the app and wait for the loading to finish. Dont use the Google Play Store version since it is no longer updated and broken. You will get a terminal like on Linux, but dont panic, I'll guide you !
+  - Open the app when it's installed
+  - You will have to allow the storage access since [its not enabled by default](https://wiki.termux.com/wiki/Termux-setup-storage). To do that, simply type `termux-setup-storage` and press enter. Now allow storage access and you are ready ! You can enter the next command when you see the dollar symbol back and waiting you for the next command.
+  - If you are on Android 11 or later (or you dont know which version of Android you have), go to Settings (exit Termux, you can completely close it or not), Applications, Termux, Permissions, disable storage access and re-enable it. [This is due to an Android bug which cannot be fixed by the Termux community.](https://wiki.termux.com/wiki/Termux-setup-storage) Then go back to Termux.
+  - Then browse to the Geometry Dash app memory by executing `cd /data/data/aaa.bbbbbbb.cccccccccccc` (replace `aaa.bbbbbbb.cccccccccccc` by the package name you memorized)
+  - Remove the current savefiles by executing `rm -rf *.dat`
+  - Move the fixed savefiles of your phone memory by running the command `mv /storage/emulated/0/*.dat ./` (dont forget the dots, else you may get permission error or inexistant path error)
+  - Try opening Geometry Dash (or your GDPS), it should be fixed. BUT DONT QUIT THIS TUTORIAL OR YOU COULD GET HACKED.
+  - Now we have a problem (not really since I have the solution): every app can access to the game data. Why is this a problem ? They can access your savefiles, so they can access your account, and even, your password. Almost no apps actually steal data from Geometry Dash since they normally can't, but no one knows. To fix this high security issue, go to your file manager, internal storage, then go to the folder called "ApkExtractor", then to the folder called with the same name as your Geometry Dash or GDPS app, then install the only APK in this folder. This will remove the App Cloner changes but not the savefiles changes.
+  - Annother "problem": USB debugging is enabled so everyone that has your phone can backup data of any apps of your smartphone. To disable it:
+    - Go back to settings menu, scroll down and you will have a new category called "Developers options": go into it.
+    - WARNING: YOU SHOULD NOT MODIFY A SETTING WITHOUT KNOWING WHAT ARE YOU DOING ! PLAYING WITH THESE SETTINGS MAY MAKE YOUR DEVICE COMPLETELY UNUSABLE AND USELESS, AND YOU MAY LOSE ALL YOUR DATA !
+    - Scroll down and disable USB Debugging
+    - Close the Settings app
+  - After this, you are 100% safe.
+  - Now you can uninstall all the "temporary" apps we installed (ADB and ABE on the PC, APK Editor Pro, AppCloner and Termux on the phone)
+
+If your Android device is rooted (its a very lot more fast):
+  - Go to your browser to download the latest version of the Python programm. There is a binary for Android but I dont recommend it and it may be deleted in the future since Python installation in Termux (the app we'l use to launch the programm) is easy. Download it using [GitHub Releases](https://github.com/HGStyle/GD-SaveFileFixer/releases), download the first file ending with `.py` to your Downloads folder on your internal storage (not SD card ! if its on your SD card you will have to move it to your internal storage download folder).
+  - Download and install the latest version of [Termux](https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk), then open the app and wait for the loading to finish. Dont use the Google Play Store version since it is no longer updated and broken. You will get a terminal like on Linux, but dont panic, I'll guide you !
+  - Open the app when it's installed
+  - You will have to allow the storage access since [its not enabled by default](https://wiki.termux.com/wiki/Termux-setup-storage). To do that, simply type `termux-setup-storage` and press enter. Now allow storage access and you are ready ! You can enter the next command when you see the dollar symbol back and waiting you for the next command.
+  - If you are on Android 11 or later (or you dont know which version of Android you have), go to Settings (exit Termux, you can completely close it or not), Applications, Termux, Permissions, disable storage access and re-enable it. [This is due to an Android bug which cannot be fixed by the Termux community.](https://wiki.termux.com/wiki/Termux-setup-storage) Then go back to Termux.
+  - Now we'll update the Termux programms. Simply type `apt update`, then press enter. After, type `apt upgrade -y` and press enter. After, remove unnecesary software (its automatic and won't break anything) by typing `apt autoremove -y` and press enter. (from now I will no longer say "Press enter", but you will still have to do it after typing a command)
+  - Now we will install Python. Simply type the command `apt install python3 python-pip -y` and wait. Notice that this can take up to some minutes, depending on your device and internet connection speed.
+  - Now we need to install Python depencies. This can be done by simply running `python3 -m pip install pycryptodome`. If it fails, it's not really important, just skip this step like if it was done correctly.
+  - Now you will have to naviguate to your download folder. Firstly, run the command `cd /storage/emulated/0` to go to your internal storage. Then type the command `dir` to list all the files and folders. Find your download folder name and run the command `cd [entire name of your download folder]`. It's usually `cd Download`.
+  - Now, find the name of the Python script file. Run the command `find . -name "*.py"` (dont forget the dots). You will get the name of every file ending with `.py` (so, for almost every user, only one file: the actual Python script we need to run).
+  - Now we need to get root access. To do this, we'll use st42's termux-sudo script:
+      - Install the needed packages by running `pkg install ncurses-utils wget tsu`
+      - Download the script by running `wget -O "sudo" "https://gitlab.com/st42/termux-sudo/-/raw/master/sudo?ref_type=heads"`
+      - Run these 2 commands to install termux-sudo completely: `cat sudo > /data/data/com.termux/files/usr/bin/sudo` and then `chmod 700 /data/data/com.termux/files/usr/bin/sudo`
+  - Run the Python script by doing `sudo python3 [python script full file name]`. It's usually `sudo python3 GD-SaveFileFixer-SourceCode.py`. If the Python script filename contains spaces, run `sudo python3 "[python script full file name]"` (dont forget the two `"`: one at the start, one at the end of the filename).
+  - If the package name you memorised isn't `com.robtopx.geometryjump`, the second option won't work. That's why it is not recommended, use the recommended option 3 instead. (it should not be long)
+  - Once the programm has done running (you see the `$` symbol of Termux), close Termux.
+  - Try opening Geometry Dash (or your GDPS), it should be fixed.
+  - You can uninstall the Termux app.
+
+## Running on iOS or iPadOS
+
+As I said before, I dont own any iOS or iPadOS devices that are up to date, I can't install apps on them since they are way to old. But here is a way that will probably work that I havn't tested. Firstly, [jailbreak your iDevice, here is a list of tutorials depending on your iOS/iPadOS version and/or iPhone/iPad edition](https://www.idownloadblog.com/jailbreak/). You may (or not) also see these jailbreaking tools: [unc0ver](https://unc0ver.dev/), [checkra1n](https://checkra.in/), [palera1n](https://palera.in/), [Dopamine](https://ellekit.space/dopamine/), [Taurine](https://taurine.app/), [Odyssey](https://theodyssey.dev/), [Chimera](https://chimera.coolstar.org/), [Electra](https://www.coolstar.org/electra/), [H3lix](https://h3lix.tihmstar.net/), [Phoenix](https://phoenixpwn.com/), [EtasonJB](https://etasonjb.tihmstar.net/), [backr00m (french old tutorial)](https://gamergen.com/forums/tutos-membres-ios/backr00m-jailbreak-de-l-apple-tv4-tvos-10-2-2-a-11-1-t736325.html) etc... You can find many more on the Internet but be carefull ! [Malwares exists on iOS and iPadOS !](https://www.howtogeek.com/447107/can-my-iphone-or-ipad-get-a-virus/). Then install [iSH](https://ish.app/) and the Python programm, open iSH, install Python, run the Python programm and exit iSH and finally open Geometry Dash, It should be fixed. NOTE: I havn't tested this because as I said, I dont own any iDevice that can install apps ! (they are too old, Apple Store refuses to install apps on it).
 
 ## Not working ?
 
