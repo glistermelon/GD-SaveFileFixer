@@ -1,7 +1,7 @@
 # Geometry Dash Savefile Fixer
 
 This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders)
-This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data.
+This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data. This is an entire rewrite of the code, I'm gonna license it.
 
 ## Instructions
 
@@ -261,4 +261,5 @@ These pages were usefull to me to encrypt/decrypt GD savefiles:
 ## Credits and legality
 
 Thanks to WEGFan because this won't exists without his GitHub repo. I dont see any license on his GitHub repo, but I credit he anyways, even if its not needed.
-Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some centances of the README.md file. But that's all. If you are WEGFan, firstly thanks, and secondly, you may feel like I stealed your work. That's not my goal. If you wanna discuss about this software, contact me on Discord at https://dsc.gg/hgstyle or by email at `hgstyle@outlook.fr`. This software is, for now, leaved unlicensed, because if WEGFan decide to license his code under GNU GPL, my code would also need to be licensed under GNU GPL due to his policy, and this can make legality problems. Again, **my goal isn't to steal code from people, since I dont wan't that this happens to me, but instead to improve it and credit people that needs to be credited.**
+Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some centances of the README.md file. But that's all. ~~If you are WEGFan, firstly thanks, and secondly, you may feel like I stealed your work. That's not my goal. If you wanna discuss about this software, contact me on Discord at https://dsc.gg/hgstyle or by email at `hgstyle@outlook.fr`. This software is, for now, leaved unlicensed, because if WEGFan decide to license his code under GNU GPL, my code would also need to be licensed under GNU GPL due to his policy, and this can make legality problems. Again, **my goal isn't to steal code from people, since I dont wan't that this happens to me, but instead to improve it and credit people that needs to be credited.**~~
+It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine ! Just thanks bro, I think I can license the software without having problems with him. (its the first time a known gd coder does that so thx)
