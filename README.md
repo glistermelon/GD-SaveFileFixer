@@ -7,6 +7,10 @@ This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://githu
 
 If they seems really long, its because I try to include every cases to make everyone can use this programm. You can skip sections for Linux users (since they are really long) if you aren't using Linux (remember, Ubuntu, Debian, etc... are Linux !). If its so complicated on Linux, it's because there is many different "editions" of Linux (actually called distributions, example: Ubuntu and Debian are Linux distributions) and they have different applications, with different versions, and its sometimes hard to make an operation working on every distributions.
 
+## Not working ?
+
+Firstly, check the [project FAQ](https://github.com/HGStyle/GD-SaveFileFixer/blob/master/FAQ.md) If you encounter any problem (unable to fix / doesn't work after fixed), get help by [create an issue](https://github.com/HGStyle/GD-SaveFileFixer/issues/new) (edit: @superchupu on Discord told me issues are disabled, now they are back - sorry) or [contact me on Discord](https://dsc.gg/hgstyle).
+
 ### Using prebuilt binaries
 
 In the [GitHub Releases](https://github.com/HGStyle/GD-SaveFileFixer/releases), I post the source code of the project per version, but also binaries (= executable files) that I build myself on my computer (mostly on live sessions like MX Linux or Hirens BootCD). You can download these and run them on your computer directly without installing the whole [Python programming language](https://python.org/) (if you dont know if your computer is 64bits or 32bits, choose the 32bits version). Note that **I dont post binaries for MacOS, iOS and iPadOS due to the fact that I dont own any Apple device since I hate Apple** (no drama please, its just my opinion. OK, actually I own some iPhones from 2013 but they are so old that I can't even install new apps on them). Even if you download prebuilt binaries, you will still have to install some apps if you are on mobile.
@@ -246,10 +250,6 @@ If your Android device is rooted (its a very lot more fast):
 
 As I said before, I dont own any iOS or iPadOS devices that are up to date, I can't install apps on them since they are way to old. But here is a way that will probably work that I havn't tested. Firstly, [jailbreak your iDevice, here is a list of tutorials depending on your iOS/iPadOS version and/or iPhone/iPad edition](https://www.idownloadblog.com/jailbreak/). You may (or not) also see these jailbreaking tools: [unc0ver](https://unc0ver.dev/), [checkra1n](https://checkra.in/), [palera1n](https://palera.in/), [Dopamine](https://ellekit.space/dopamine/), [Taurine](https://taurine.app/), [Odyssey](https://theodyssey.dev/), [Chimera](https://chimera.coolstar.org/), [Electra](https://www.coolstar.org/electra/), [H3lix](https://h3lix.tihmstar.net/), [Phoenix](https://phoenixpwn.com/), [EtasonJB](https://etasonjb.tihmstar.net/), [backr00m (french old tutorial)](https://gamergen.com/forums/tutos-membres-ios/backr00m-jailbreak-de-l-apple-tv4-tvos-10-2-2-a-11-1-t736325.html) etc... You can find many more on the Internet but be carefull ! [Malwares exists on iOS and iPadOS !](https://www.howtogeek.com/447107/can-my-iphone-or-ipad-get-a-virus/). Then install [iSH](https://ish.app/) and the Python programm, open iSH, install Python, run the Python programm and exit iSH and finally open Geometry Dash, It should be fixed. NOTE: I havn't tested this because as I said, I dont own any iDevice that can install apps ! (they are too old, Apple Store refuses to install apps on it).
 
-## Not working ?
-
-If you encounter any problem (unable to fix / doesn't work after fixed), get help by [create an issue](https://github.com/HGStyle/GD-SaveFileFixer/issues/new) or [contact me on Discord](https://dsc.gg/hgstyle) (faster response on Discord).
-
 ## More info about savefile encoding/decoding
 
 These pages were usefull to me to encrypt/decrypt GD savefiles:
@@ -261,5 +261,7 @@ These pages were usefull to me to encrypt/decrypt GD savefiles:
 ## Credits and legality
 
 Thanks to WEGFan because this won't exists without his GitHub repo. I dont see any license on his GitHub repo, but I credit he anyways, even if its not needed.
-Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some centances of the README.md file. But that's all. ~~If you are WEGFan, firstly thanks, and secondly, you may feel like I stealed your work. That's not my goal. If you wanna discuss about this software, contact me on Discord at https://dsc.gg/hgstyle or by email at `hgstyle@outlook.fr`. This software is, for now, leaved unlicensed, because if WEGFan decide to license his code under GNU GPL, my code would also need to be licensed under GNU GPL due to his policy, and this can make legality problems. Again, **my goal isn't to steal code from people, since I dont wan't that this happens to me, but instead to improve it and credit people that needs to be credited.**~~
-It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine ! Just thanks bro, I think I can license the software without having problems with him. (its the first time a known gd coder does that so thx)
+Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some sentances of the README.md file. But that's all.
+Edit: It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine ! Just thanks bro, I think I can license the software without having problems with him. (its the first time a known gd coder does that so thx)
+
+## Thanks you all !
