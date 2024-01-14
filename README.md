@@ -1,13 +1,13 @@
 # Geometry Dash Savefile Fixer
 
-This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders)
+This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders.)
 This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data. This is an entire rewrite of the code, I licensed it under [MIT License](https://hgstyle.mit-license.org/) so you can do almost anything you want on this software, including using it in closed-source projects and so on... Only 1 thing: credit me (plz). Thanks you all.
 
 ## Instructions
 
-If they seems really long, its because I try to include every cases to make everyone can use this programm. You can skip sections for Linux users (since they are really long) if you aren't using Linux (remember, Ubuntu, Debian, etc... are Linux !). If its so complicated on Linux, it's because there is many different "editions" of Linux (actually called distributions, example: Ubuntu and Debian are Linux distributions) and they have different applications, with different versions, and its sometimes hard to make an operation working on every distributions.
+If they seems really long, its because I try to include every cases to make everyone can use this programm. You can skip sections for Linux users (since they are really long) if you aren't using Linux (remember, Ubuntu, Debian, etc... are Linux!). If its so complicated on Linux, it's because there is many different "editions" of Linux (actually called distributions, example: Ubuntu and Debian are Linux distributions) and they have different applications, with different versions, and its sometimes hard to make an operation working on every distributions.
 
-## Not working ?
+## Not working?
 
 Firstly, check the [project FAQ](https://github.com/HGStyle/GD-SaveFileFixer/blob/master/FAQ.md) If you encounter any problem (unable to fix / doesn't work after fixed), get help by [create an issue](https://github.com/HGStyle/GD-SaveFileFixer/issues/new) (edit: @superchupu on Discord told me issues are disabled, now they are back - sorry) or [contact me on Discord](https://dsc.gg/hgstyle).
 
@@ -262,6 +262,6 @@ These pages were usefull to me to encrypt/decrypt GD savefiles:
 
 Thanks to WEGFan because this won't exists without his GitHub repo. I dont see any license on his GitHub repo, but I credit he anyways, even if its not needed.
 Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some sentances of the README.md file. But that's all.
-Edit: It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine ! Just thanks bro, I think I can license the software without having problems with him. (its the first time a known gd coder does that so thx)
+Edit: It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine! Just thanks bro, I think I can license the software without having problems with him. (it's the first time a known gd coder does that so thx)
 
-## Thanks you all !
+## Thanks you all!
