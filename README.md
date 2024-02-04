@@ -3,11 +3,6 @@
 This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders.)
 This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data. This is an entire rewrite of the code, I licensed it under [MIT License](https://hgstyle.mit-license.org/) so you can do almost anything you want on this software, including using it in closed-source projects and so on... Only 1 thing: credit me (plz). Thanks you all.
 
-## Note
-
-Even if it should have support for MacOS and iOS, I made a little mistake in the code. I will fix that later, but for now, support for Apple ecosystem doesn't works.
-Technical reason: In function `is_valid_savefile`, code only ran on MacOS and iOS to decrypt savefiles tries to use an undefined variable `last`...
-
 ## Instructions
 
 If they seems really long, its because I try to include every cases to make everyone can use this programm. You can skip sections for Linux users (since they are really long) if you aren't using Linux (remember, Ubuntu, Debian, etc... are Linux!). If its so complicated on Linux, it's because there is many different "editions" of Linux (actually called distributions, example: Ubuntu and Debian are Linux distributions) and they have different applications, with different versions, and its sometimes hard to make an operation working on every distributions.
@@ -254,6 +249,11 @@ If your Android device is rooted (its a very lot more fast):
 ## Running on iOS or iPadOS
 
 As I said before, I dont own any iOS or iPadOS devices that are up to date, I can't install apps on them since they are way to old. But here is a way that will probably work that I havn't tested. Firstly, [jailbreak your iDevice, here is a list of tutorials depending on your iOS/iPadOS version and/or iPhone/iPad edition](https://www.idownloadblog.com/jailbreak/). You may (or not) also see these jailbreaking tools: [unc0ver](https://unc0ver.dev/), [checkra1n](https://checkra.in/), [palera1n](https://palera.in/), [Dopamine](https://ellekit.space/dopamine/), [Taurine](https://taurine.app/), [Odyssey](https://theodyssey.dev/), [Chimera](https://chimera.coolstar.org/), [Electra](https://www.coolstar.org/electra/), [H3lix](https://h3lix.tihmstar.net/), [Phoenix](https://phoenixpwn.com/), [EtasonJB](https://etasonjb.tihmstar.net/), [backr00m (french old tutorial)](https://gamergen.com/forums/tutos-membres-ios/backr00m-jailbreak-de-l-apple-tv4-tvos-10-2-2-a-11-1-t736325.html) etc... You can find many more on the Internet but be carefull ! [Malwares exists on iOS and iPadOS !](https://www.howtogeek.com/447107/can-my-iphone-or-ipad-get-a-virus/). Then install [iSH](https://ish.app/) and the Python programm, open iSH, install Python, run the Python programm and exit iSH and finally open Geometry Dash, It should be fixed. NOTE: I havn't tested this because as I said, I dont own any iDevice that can install apps ! (they are too old, Apple Store refuses to install apps on it).
+
+## Note
+
+Even if it should have support for MacOS and iOS, I made a little mistake in the code. I will fix that later, but for now, support for Apple ecosystem doesn't works.
+Technical reason: In function `is_valid_savefile`, code only ran on MacOS and iOS to decrypt savefiles tries to use an undefined variable `last`...
 
 ## More info about savefile encoding/decoding
 
