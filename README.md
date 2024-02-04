@@ -3,6 +3,10 @@
 This tool can fix most problems caused unable to open the game by the savefiles. (which is the game will only launch if you move the savefiles to other folders.)
 This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to dont loose their data. This is an entire rewrite of the code, I licensed it under [MIT License](https://hgstyle.mit-license.org/) so you can do almost anything you want on this software, including using it in closed-source projects and so on... Only 1 thing: credit me (plz). Thanks you all.
 
+## Note
+
+### Options 3 and 4 are temporarily broken. Don't use them. Use option 1 or 2 instead.
+
 ## Instructions
 
 If they seems really long, its because I try to include every cases to make everyone can use this programm. You can skip sections for Linux users (since they are really long) if you aren't using Linux (remember, Ubuntu, Debian, etc... are Linux!). If its so complicated on Linux, it's because there is many different "editions" of Linux (actually called distributions, example: Ubuntu and Debian are Linux distributions) and they have different applications, with different versions, and its sometimes hard to make an operation working on every distributions.
