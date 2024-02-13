@@ -5,7 +5,7 @@ This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://githu
 
 ## Note
 
-### Options 3 and 4 are temporarily broken. Don't use them. Use option 1 or 2 instead.
+### Options 3 and 4 are temporarily broken. Don't use them. Use option 1 or 2 instead. (don't worry, I'm working on an update, should be finished in a week)
 
 ## Instructions
 
