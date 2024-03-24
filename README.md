@@ -5,7 +5,9 @@ This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://githu
 
 ## Note
 
-### Options 3 and 4 are temporarily broken. Don't use them. Use option 1 or 2 instead. (don't worry, I'm STILL working on an update, ~~should be finished in a week~~ I know it's been like 3 weeks)
+### Options 3 and 4 are temporarily broken. Don't use them. Use option 1 or 2 instead.
+
+### NEW UPDATE SOON (currently compilling the Python code to binaries for multiple OSes)
 
 ## Instructions
 
