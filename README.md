@@ -52,7 +52,7 @@ If your Geometry Dash version is a GDPS (or your Geometry Dash is signed using t
   - Do not uninstall APK Extractor since we'll need it later.
   - If the package name you memorised is `com.robtopx.geometryjumq` (notice the `q` at the end !):
       - Download and install [APK Editor Pro](https://dl.hgstyle.fr/Apps/AndroidHackerKit/APK_Editor/Clean/APK_Editor_Pro.apk)
-      - Download the APK of Geometry Dash (but not the one used by GDPSes, and it should be version 2.111). I recommend using this one: [Download Geometry Dash 2.111 APK](https://dl.hgstyle.fr/Geometry_Dash_Versions/Geometry.Dash.ver.2.111.build.33.apk)
+      - Download the APK of Geometry Dash (but not the one used by GDPSes, and it should be version the same version as the app). I recommend using this one: [Download Geometry Dash 2.111 APK](https://dl.hgstyle.fr/Every_Geometry_Dash_Versions/Android/GeometryDash_Normal_2.111.apk) but if you want other Geometry Dash versions, you can go [here](https://dl.hgstyle.fr/Every_Geometry_Dash_Versions/Android/) to download the right file.
       - Open APK Editor Pro, alow storage access, click "Select Apk from App" and click on your Geometry Dash or your GDPS
       - Select "Full Edit" and then "Decode All Files", then go to "Files" in the toolbar of APK Editor Pro
       - Select the folder `assets` and `lib` and click "Extract", then go to your downloads folder and click "OK" (then wait for it ends and exit the app)
