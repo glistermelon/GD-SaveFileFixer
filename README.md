@@ -70,7 +70,7 @@ If your Geometry Dash version is a GDPS (or your Geometry Dash is signed using t
       - Click on the "Build" button and wait for it builds the APK file
       - Open your file manager, go to internal storage, go to the folder "ApkEditor" (if you see multiple files, ignore those that aren't an APK) and move the APK file to the downloas folder in your internal storage
       - Optionally, you can delete the "ApkEditor" folder and/or the APK Editor Pro app
-  - Download an install [App Cloner Pro](https://dl.hgstyle.fr/Apps/AndroidHackerKit/Other_apps/App_Cloner_Pro.apk)
+  - Download an install [App Cloner Pro](https://dl.hgstyle.fr/AndroidHackerKit/Other_apps/App_Cloner_Pro.apk)
   - Open App Cloner
   - If the package name you memorised is `com.robtopx.geometryjumq` (notice the `q` at the end !):
       - Click on the folder icon and click OK when a message box appears
