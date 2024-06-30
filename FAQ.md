@@ -5,9 +5,9 @@ A.K.A. "Foire Aux Questions" (FAQ) in French. (useless fact but why not)
 ## it doznt workkkkk helllppp meeeee
 
 I'm sorry, but I can't help if you just send me this.
-At least send me a screenshot or a text transcription of what's one the screen, if a terminal (a black window) is opened, please report what's wrotten on it.
+At least send me a screenshot or a text transcription of what's on the screen, if a terminal (a black window) is opened, please report what's wrotten on it.
 
-## Android tuto is way too long
+## Android tutorial is way too long
 
 You wanna try to get your GD savefiles back, yes or not? It's the only way, as far as I know.
 
