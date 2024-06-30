@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-### DEVELOPPER WARNING: THE SYNTAX USED IN THIS PROGRAMM MOSTLY DOES NOT RESPECT THE PEP 8 SYNTAX, YOUVE BEEN WARNED ###
+### DEVELOPER WARNING: THE SYNTAX USED IN THIS PROGRAM MOSTLY DOES NOT RESPECT THE PEP 8 SYNTAX, YOUVE BEEN WARNED ###
 # Imports the necessary libraries
 import base64
 import datetime  # Don't forget to write datetime.datetime, and not just datetime !
@@ -466,11 +466,11 @@ def get_data_folder(system_name: str) -> list:
 # Run if not imported
 if __name__ == "__main__":
 	print("""-----------------------------------------------------------
-Hello user ! READ THIS IF ITS YOUR FIRST USE. (IMPORTANT)
+Hello user! READ THIS IF ITS YOUR FIRST USE. (IMPORTANT)
 -----------------------------------------------------------
 THIS TOOL IS PROVIDEN WITHOUT ANY GUARANTEE OF SUCCESS,
 OR MAY ACCIDENTALY BROKES YOUR SAVEFILES, that's why it
-automatically creates a backup before modifying any file !
+automatically creates a backup before modifying any file!
 Rollback this backup manually if you need it.
 (TODO: Add a function to rollback backups of savefiles)
 -----------------------------------------------------------
@@ -485,11 +485,11 @@ If it doesn't work, or you are not using Linux or MacOS
 (example: any BSD system), download the Windows version
 and run it in Wine or the programm you use to run the game.
 -----------------------------------------------------------
-THIS PROGRAMM IS FREELY RELEASED UNDER MIT LICENSE.
-IF YOU PAID FOR IT, YOU SHOULD ASK FOR REFUND !
+THIS PROGRAM IS FREELY RELEASED UNDER MIT LICENSE.
+IF YOU PAID FOR IT, YOU SHOULD ASK FOR REFUND!
 -----------------------------------------------------------
 ALWAYS DOWNLOAD THE PROGRAMM FROM OUR GITHUB (link below)
-TO MAKE SURE YOU DON'T GET MALWARES !
+TO MAKE SURE YOU DON'T GET MALWARE!
 -----------------------------------------------------------
 For more informations/help, check our GitHub at:
 		https://github.com/HGStyle/GD-SaveFileFixer/""")
@@ -503,7 +503,7 @@ For more informations/help, check our GitHub at:
 		"Manual: Will ask you for the paths of the savefiles. Don't use if you are not guided or if you're not a technerd."
 	]
 	MODES_QUESTION = """
-Which mode do you want to use ? Every mode makes a backup of each file found.
+Which mode do you want to use? Every mode makes a backup of each file found.
 NOTES ABOUT MODES:
 	- Always try first Classic modes.
 	- Search modes are a bit long but will work with GDPS while Classics modes can't.
@@ -528,7 +528,7 @@ NOTES ABOUT MODES:
 			savefiles = search_savefiles(data_folder)
 		game_names = [i[len(data_folder):].split(os.sep)[0] for i in savefiles]
 		print("""
-Which "copy of Geometry Dash" do you want to fix ? Write the number of the choice.
+Which "copy of Geometry Dash" do you want to fix? Write the number of the choice.
 You can put multiple ones by separating the numbers of your choice by a slash (/).
 Not choosing anything by just pressing Enter will fix them all.""".strip())
 		print('\n'.join(game_names))
@@ -551,13 +551,13 @@ Not choosing anything by just pressing Enter will fix them all.""".strip())
 		savefiles = []
 		user_input = None
 		while user_input != "":
-			user_input = ask_for_path("Which file should be added to savefile list ?" +
+			user_input = ask_for_path("Which file should be added to savefile list?" +
 			   "\nEnter nothing to start fixing all the selected savefiles.")
 			is_savefile = is_valid_savefile(user_input)
 			if user_input and is_savefile:
 				savefiles.append(user_input)
 			elif user_input and not is_savefile:
-				print('This savefile is not seeming valid. Make sure you did put the right file !' +
+				print('This savefile is not seeming valid. Make sure you did put the right file!' +
 				   '\nIf you did, then sorry, everything in it is probably lost forever, and I cannot do anything.')
 			clear_screen()
 	clear_screen()
