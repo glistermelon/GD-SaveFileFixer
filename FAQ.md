@@ -17,12 +17,12 @@ Use Android or Linux instead. I have no idea where are the savefiles saved. Good
 If you have the savefiles, use [Wine](https://winehq.org/) to get a Windows environement (to get support fixing for Windows/Android-like savefiles),
 or [Darling](https://darlinghq.org/) to get a Darwin (MacOS) environement (to get support for fixing MacOS/iOS-like savefiles).
 
-## I dont wanna cancel my iDevice guarentee
+## I don't wanna cancel my iDevice guarentee
 
 Firstly, check is the guarentee still available for your device! Because maybe it's not, so you won't cancel anything.
 See Apple's website: [Apple Check Coverage](https://checkcoverage.apple.com/)
 
-## What is that for?
+## What is this for?
 
 If you cannot open Geometry Dash, then try this. It is not guarenteed to work, but it may in 50% of time.
 It fixes some weird data put by Geometry Dash in it for some reason and that the game can't handle, because
