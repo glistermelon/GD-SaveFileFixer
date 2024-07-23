@@ -52,8 +52,8 @@ if not(IS_COMPILED) and not(IS_FROZEN):
 	try:
 		exec('i  m  p  o  r  t p  i  p'.replace('  ', ''))  # Little hack so Depency Walkers used by compilers won't detect this import
 	except ImportError:
-		print('PIP is not installed. It is needed to download some additionnal modules to add functionnalities.')
-		choice = input('Would you like to download it ? (y/n) -> ')
+		print('PIP is not installed. It is needed to download some additional modules to add functionalities.')
+		choice = input('Would you like to download it? (y/n) -> ')
 		if "y" in choice.lower():
 			print('Installing PIP... This may take some time depending on your internet connection.')
 			# Download the right installer
@@ -80,7 +80,7 @@ if not(IS_COMPILED) and not(IS_FROZEN):
 	except ImportError:
 		print('PyCryptoDome is not installed. It is needed for fixing MacOS/iOS savefiles.')
 		if pip:
-			choice = input('Would you like to download it ? (y/n) -> ')
+			choice = input('Would you like to download it? (y/n) -> ')
 			if "y" in choice.lower():
 				print('Installing PyCryptoDome... This may take some time depending on your internet connection.')
 				subprocess.run([sys.executable, "-m", "pip", "install", "pycryptodome"])
@@ -474,21 +474,21 @@ automatically creates a backup before modifying any file!
 Rollback this backup manually if you need it.
 (TODO: Add a function to rollback backups of savefiles)
 -----------------------------------------------------------
-NOTE IF YOU USE AN ANDROID EMULATOR (Bluestacks, Nox, etc):
-You must run this programm in the emulator using Termux
-and follow the Android instructions, else it won't work !
+NOTE IF YOU USE AN ANDROID EMULATOR (BlueStacks, Nox, etc):
+You must run this program in the emulator using Termux
+and follow the Android instructions, else it won't work!
 -----------------------------------------------------------
 NOTE IF YOU ARE USING WINE OR SIMILAR SOFTWARE:
 On Linux and MacOS, downloading the programm and running it
 by double-clicking it should work.
 If it doesn't work, or you are not using Linux or MacOS
 (example: any BSD system), download the Windows version
-and run it in Wine or the programm you use to run the game.
+and run it in Wine or the program you use to run the game.
 -----------------------------------------------------------
 THIS PROGRAM IS FREELY RELEASED UNDER MIT LICENSE.
 IF YOU PAID FOR IT, YOU SHOULD ASK FOR REFUND!
 -----------------------------------------------------------
-ALWAYS DOWNLOAD THE PROGRAMM FROM OUR GITHUB (link below)
+ALWAYS DOWNLOAD THE PROGRAM FROM OUR GITHUB REPO (link below)
 TO MAKE SURE YOU DON'T GET MALWARE!
 -----------------------------------------------------------
 For more informations/help, check our GitHub at:
@@ -582,7 +582,7 @@ Not choosing anything by just pressing Enter will fix them all.""".strip())
 	for savefile in savefiles:
 		if not fix_savefile(savefile):
 			errors += 1
-			print('An exception occured while fixing file: ' + savefile)
+			print('An exception occurred while fixing file: ' + savefile)
 		else:
 			print('Savefile fixed successfully: ' + savefile)
 	print('Fixing done.')
