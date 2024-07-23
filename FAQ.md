@@ -11,7 +11,7 @@ At least send me a screenshot or a text transcription of what's on the screen, i
 
 You wanna try to get your GD savefiles back, yes or not? It's the only way, as far as I know.
 
-## I use *BSD or Ubuntu Touch
+## I use BSD or Ubuntu Touch
 
 Use Android or Linux instead. I have no idea where are the savefiles saved. Good luck.
 If you have the savefiles, use [Wine](https://winehq.org/) to get a Windows environement (to get support fixing for Windows/Android-like savefiles),
