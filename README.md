@@ -271,7 +271,7 @@ These pages were useful to me to encrypt/decrypt GD savefiles:
 
 ## Credits and legality
 
-Thanks to WEGFan because this would not exist without his GitHub repo. I dont see any license on his GitHub repo, but I credit he anyways, even if its not needed.
+Thanks to WEGFan because this would not exist without his GitHub repo. I dont see any license on his GitHub repo, but I credit him anyways, even if its not needed.
 Note that **this is an entire rewrite**, actually what was **reused from WEGFan's code** is actually **one single line of code**. And some sentances of the README.md file. But that's all.
 Edit: It seems like WEGFan has seen this repo, since he made a modification in his GitHub repo to redirect users from his archived repo to mine! Just thanks bro, I think I can license the software without having problems with him. (it's the first time a known gd coder does that so thx)
 
