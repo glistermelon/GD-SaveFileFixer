@@ -14,8 +14,8 @@ You wanna try to get your GD savefiles back, yes or not? It's the only way, as f
 ## I use BSD or Ubuntu Touch
 
 Use Android or Linux instead. I have no idea where are the savefiles saved. Good luck.
-If you have the savefiles, use [Wine](https://winehq.org/) to get a Windows environement (to get support fixing for Windows/Android-like savefiles),
-or [Darling](https://darlinghq.org/) to get a Darwin (MacOS) environement (to get support for fixing MacOS/iOS-like savefiles).
+If you have the savefiles, ~~use [Wine](https://winehq.org/) to get a Windows environement (to get support fixing for Windows/Android-like savefiles),
+or [Darling](https://darlinghq.org/) to get a Darwin (MacOS) environement (to get support for fixing MacOS/iOS-like savefiles)~~ Version 2 now automatically selects the right format even if you're not on the right OS and fixes it in the format it originally was (so you won't be able to convert from a format to annother using this tool. Maybe i' a future 2.1 update I'll add this functionality...).
 
 ## I don't wanna cancel my iDevice guarentee
 
@@ -29,6 +29,3 @@ It fixes some weird data put by Geometry Dash in it for some reason and that the
 we all know that RobTop is the most unlogical programmer that ever existed.
 It works on official versions from Google Play Store, Apple Store/iTunes, Microsoft Store and Steam, but also
 for cracked versions and other custom versions such as unofficial versions (ex: unofficial 2.2s) or GDPSes.
-
-todo: write more questions here
-btw you can make an issue to ask adding questions here
