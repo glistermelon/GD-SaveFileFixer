@@ -5,7 +5,7 @@ This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://githu
 
 ## Note
 
-### THE UPDATE 2.0.0 IS NOW OUT !!!!!! EVERYTHING SHOULD NOW BE FIXED
+### 2.2 certainly fixed this bug, so if you are using 2.2 it's very very unlikely this program will fix your game. However, for 2.1 and before, this software is still quite usefull, and still working great!
 
 ## Instructions
 
