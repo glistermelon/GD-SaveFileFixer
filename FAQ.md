@@ -20,7 +20,7 @@ or [Darling](https://darlinghq.org/) to get a Darwin (MacOS) environement (to ge
 ## I don't wanna cancel my iDevice guarentee
 
 Firstly, check is the guarentee still available for your device! Because maybe it's not, so you won't cancel anything.
-See Apple's website: [Apple Check Coverage](https://checkcoverage.apple.com/)
+See Apple's website: [Apple Check Coverage](https://checkcoverage.apple.com/). Also, if it's not a guarentee directly given by Apple (example: a guarentee given by your local tech shop), you have to check their terms. Maybe they allow jailbreaking under certain terms, or maybe they allow it if you pay them to do it. I don't know everything, however, searching is the most precious power in the universe. Finding is the second one.
 
 ## What is this for?
 
