@@ -279,5 +279,8 @@ def select_gdps():
 # Run if not imported
 if __name__ == "__main__":
 
-	ask_initial_question()
-	window.mainloop()
+	try:
+		ask_initial_question()
+		window.mainloop()
+	except Exception as e:
+		error('An exception occurred! Report this to Glistermelon:\n\n' + str(e))
