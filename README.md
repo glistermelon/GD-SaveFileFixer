@@ -1,7 +1,8 @@
 # Geometry Dash Savefile Fixer
 
-This tool can fix most problems that make unable to open the game by the savefiles. (which the game will only launch if you move the savefiles to other folders.)
-This is an ameliorated version of the [Geometry-Dash-Savefile-Fix](https://github.com/WEGFan/Geometry-Dash-Savefile-Fix) made by [WEGFan](https://github.com/WEGFan) but since he seems inactive now, and there are some issues opened, I wanted to help these people to don't lose their data. This is an entire rewrite of the code, I licensed it under [MIT License](https://hgstyle.mit-license.org/2023) so you can do almost anything you want on this software, including using it in closed-source projects and so on... Only 1 thing: credit me (plz). Thanks you all.
+This tool fixes the most common problem causing Geometry Dash 2.1 failing to open (that being save file formatting).
+This is a graphical, simplified version of the [Geometry-Dash-Savefile-Fix](https://github.com/HGStyle/GD-SaveFileFixer) made by HGStyle based on [previous work by WEGFan](https://github.com/WEGFan).
+It was made for a very specific use-case more focused on providing something simple than something with a good user experience, so have low expectations...
 
 # For nerds
 
